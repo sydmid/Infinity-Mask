@@ -16,11 +16,11 @@ $duration: (
 
 // Size.
 $size: (
-  border-radius: 1em,
+  border-radius: 0.75em,
   border-width: 1px,
-  element-height: 2.75em,
+  element-height: 2.5em,
   element-margin: 2em,
-  sidebar-width: 18em,
+  sidebar-width: 16em,
   sidebar-height: 3.5em,
   // when <=large is active
   inner-width: 75em,
@@ -48,7 +48,6 @@ $palette: (
   fg: #e4f0fb,
   fg-bold: #27e8a7, //font color
   fg-light: #32a685,//font color
-  header-color: rgb(218, 19, 19),
   features-bg: #3B4A59,
   border: #27e8a7,  //content border
   border-bg: #0d523b, // content bg
@@ -58,17 +57,4 @@ $palette: (
   accent2-alt: darken(#506477, 10),
   accent3: #42675a,
   accent3-alt: darken(#1e4eb6, 10),
-
-  		invert: (
-			bg:				#000000,
-			bg-alt:			#222222,
-			fg:				#ffffff,
-			fg-bold:		#ffffff,
-			fg-light:		#ffffff,
-			border:			rgba(255,255,255,1.0),
-			border-alt:		rgba(255,255,255,0.125),
-			border-bg:		rgba(255,255,255,0.125),
-			accent:			#47D3E5
-		),
-
 );
