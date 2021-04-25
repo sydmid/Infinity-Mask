@@ -3,15 +3,12 @@ $misc: (
   z-index-base: 10000,
   max-features: 20,
   max-sidebar-links: 20,
-  gallery-limit:		32,
 );
 
 // Duration.
 $duration: (
   transition: 0.2s,
   activation: 1s,
-  gallery-lightbox:	0.5s,
-  gallery-delay:		0.15s,
 );
 
 // Size.
@@ -56,5 +53,5 @@ $palette: (
   accent2: #506477,
   accent2-alt: darken(#506477, 10),
   accent3: #42675a,
-  accent3-alt: darken(#1e4eb6, 10),
+  accent3-alt: darken(#165a1f, 10),
 );
