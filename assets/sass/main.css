@@ -2407,19 +2407,26 @@ body.is-ie .spotlights > section {
   .spotlights > section {
     height: calc(33.333vh - 1.1em);
   }
+  .spotlights > section .inner h2 {
+    font-size: 1em;
+  }
+  .spotlights > section .inner p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 0.8em 0;
+  }
 }
 @media screen and (max-width: 736px) {
   .spotlights > section {
     display: block;
     height: auto;
-    min-height: 22.5em;
   }
   .spotlights > section > .image {
     width: 100%;
     height: 50vh;
   }
   .spotlights > section > .content {
-    min-height: 21.5em;
+    min-height: 15.5em;
     width: 100%;
   }
   .spotlights > section.inactive > .content > .inner, body.is-preload .spotlights > section > .content > .inner {
