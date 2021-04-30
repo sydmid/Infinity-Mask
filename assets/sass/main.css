@@ -2398,7 +2398,7 @@ body.is-ie .spotlights > section {
 }
 @media screen and (max-width: 1680px) {
   .spotlights > section > .content {
-    padding: 1.5em 0em 0.1em 0em;
+    padding: 1.5em 2em 0.1em 2em;
   }
 }
 @media screen and (min-width: 1281px) {
@@ -2705,6 +2705,19 @@ body.is-ie .wrapper.fullscreen {
 /* Wrapper (main) */
 #sidebar + #wrapper {
   margin-left: 16em;
+  padding-top: 0;
+}
+@media screen and (max-height: 1100px) {
+  #sidebar + #wrapper {
+    padding-top: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1680px) and (max-height: 1100px) {
+  #sidebar + #wrapper {
+    padding-top: 0;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 1280px) {
   #sidebar + #wrapper {
@@ -2712,9 +2725,16 @@ body.is-ie .wrapper.fullscreen {
     padding-top: 3.5em;
   }
 }
+@media screen and (max-width: 1280px) and (max-height: 1100px) {
+  #sidebar + #wrapper {
+    padding-top: 0;
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 736px) {
   #sidebar + #wrapper {
     padding-top: 0;
+    margin-left: 0;
   }
 }
 #header + #wrapper > .wrapper > .inner {
@@ -2900,6 +2920,12 @@ body.is-preload #sidebar nav ul li {
   transform: translateY(2em);
   opacity: 0;
 }
+@media screen and (max-height: 1100px) {
+  #sidebar {
+    width: 0;
+    display: none;
+  }
+}
 @media screen and (max-width: 1280px) {
   #sidebar {
     height: 3.5em;
@@ -2947,6 +2973,12 @@ body.is-preload #sidebar nav ul li {
   #sidebar nav a:after {
     background-image: none;
     background-color: #42675a;
+  }
+}
+@media screen and (max-width: 1280px) and (max-height: 1100px) {
+  #sidebar {
+    width: 0;
+    display: none;
   }
 }
 @media screen and (max-width: 736px) {

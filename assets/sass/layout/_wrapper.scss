@@ -1,26 +1,40 @@
-
-
 /* Wrapper (main) */
 
-	#wrapper {
-		#sidebar + & {
-			margin-left: _size(sidebar-width);
+#wrapper {
+  #sidebar + & {
+    margin-left: _size(sidebar-width);
+    padding-top: 0;
+    @media screen and (max-height: 1100px) {
+      padding-top: 0;
+      margin-left: 0;
+    }
+    @include breakpoint("<=xlarge") {
+      @media screen and (max-height: 1100px) {
+        padding-top: 0;
+        margin-left: 0;
+      }
+    }
 
-			@include breakpoint('<=large') {
-				margin-left: 0;
-				padding-top: _size(sidebar-height);
-			}
+    @include breakpoint("<=large") {
+      margin-left: 0;
+      padding-top: _size(sidebar-height);
+      @media screen and (max-height: 1100px) {
+        padding-top: 0;
+        margin-left: 0;
+      }
+    }
 
-			@include breakpoint('<=small') {
-				padding-top: 0;
-			}
-		}
+    @include breakpoint("<=small") {
+      padding-top: 0;
+      margin-left: 0;
+    }
+  }
 
-		#header + & {
-			> .wrapper {
-				> .inner {
-					margin: 0 auto;
-				}
-			}
-		}
-	}
+  #header + & {
+    > .wrapper {
+      > .inner {
+        margin: 0 auto;
+      }
+    }
+  }
+}
